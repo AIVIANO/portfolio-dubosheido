@@ -1,38 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../public/background.jpg'); /* Путь к вашему фоновому изображению */
+  background-size: cover; /* Масштабирование изображения по размеру экрана */
+  background-repeat: no-repeat; /* Избегаем повторения изображения */
+  background-attachment: fixed; /* Фон остается на месте при прокрутке */
+}
+
 .App-header {
   text-align: center;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+  border-radius: 10px; /* Закругленные углы */
+  margin: 20px; /* Отступы вокруг заголовка */
 }
 
 .App-header h1 {
-  font-size: 10em; /* Размер заголовка */
+  font-size: 10em;
 }
 
 .App-header p {
-  font-size: 5em; /* Размер текста */
-  margin: 20px 0; /* Отступы сверху и снизу */
+  font-size: 5em;
+  margin: 20px 0;
 }
 
 .gallery, .weather-gallery {
   display: flex;
-  overflow-x: auto; /* Горизонтальная прокрутка */
-  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow-x: auto;
+  white-space: nowrap;
   padding: 10px 0;
-  gap: 10px; /* Расстояние между изображениями */
+  gap: 10px;
 }
 
 .gallery img, .weather-gallery img {
+  max-height: 1000px;
   height: auto;
   width: auto;
-  max-height: 1000px; /* Максимальная высота изображений */
-  flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
+  flex-shrink: 0;
+  transition: transform 0.2s;
 }
 
-/* Стилизация полосы прокрутки */
+.gallery img:hover, .weather-gallery img:hover {
+  transform: scale(1.05);
+}
+
 .gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
-  height: 30px; /* Высота горизонтальной полосы прокрутки */
+  height: 30px;
 }
 
 .gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
-  background-color: darkgrey; /* Цвет ползунка */
-  border-radius: 10px; /* Закругленные углы */
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .App-header h1 {
+    font-size: 2em;
+  }
+
+  .App-header p, .App-header h2 {
+    font-size: 1.2em;
+  }
+
+  .gallery img, .weather-gallery img {
+    max-height: 200px;
+  }
 }
