@@ -4,33 +4,36 @@
 }
 
 .App-header h1 {
-  font-size: 15em; /* Размер заголовка */
+  font-size: 3em; /* Размер заголовка */
 }
 
 .App-header p {
-  font-size: 5em; /* Размер текста */
+  font-size: 1.5em; /* Размер текста */
+  margin: 20px 0; /* Отступы сверху и снизу */
 }
 
-.gallery {
+.gallery, .weather-gallery {
   display: flex;
   overflow-x: auto; /* Горизонтальная прокрутка */
   white-space: nowrap; /* Запрещаем перенос строк */
-  padding: 20px 0;
+  padding: 10px 0;
   gap: 10px; /* Расстояние между изображениями */
 }
 
-.gallery img {
-  width: 1000px; /* Размер изображений */
+.gallery img, .weather-gallery img {
+  max-width: 300px; /* Максимальная ширина изображений */
+  max-height: 300px; /* Максимальная высота изображений */
   height: auto;
+  width: auto;
   flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
 }
 
 /* Стилизация полосы прокрутки */
-.gallery::-webkit-scrollbar {
+.gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
   height: 10px; /* Высота горизонтальной полосы прокрутки */
 }
 
-.gallery::-webkit-scrollbar-thumb {
+.gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Цвет ползунка */
   border-radius: 10px; /* Закругленные углы */
 }
