@@ -27,7 +27,7 @@
 
 /* Стилизация полосы прокрутки */
 .gallery::-webkit-scrollbar {
-  height: 100px; /* Высота горизонтальной полосы прокрутки */
+  height: 10px; /* Высота горизонтальной полосы прокрутки */
 }
 
 .gallery::-webkit-scrollbar-thumb {
