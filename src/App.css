@@ -1,39 +1,22 @@
 .App-header {
   text-align: center;
-  padding: 20px;
 }
 
 .App-header h1 {
-  font-size: 7em; /* Размер заголовка */
+  font-size: 7em; /* Увеличиваем размер заголовка */
 }
 
 .App-header p {
-  font-size: 3em; /* Размер текста */
-  margin: 20px 0; /* Отступы сверху и снизу */
+  font-size: 5em; /* Увеличиваем размер текста */
 }
 
-.gallery, .weather-gallery {
+.gallery {
   display: flex;
-  overflow-x: auto; /* Горизонтальная прокрутка */
-  white-space: nowrap; /* Запрещаем перенос строк */
-  padding: 10px 0;
-  gap: 10px; /* Расстояние между изображениями */
+  justify-content: center;
+  gap: 20px; /* Увеличиваем расстояние между изображениями */
 }
 
-.gallery img, .weather-gallery img {
-  max-width: 1000px; /* Максимальная ширина изображений */
-  max-height: 1000px; /* Максимальная высота изображений */
+.gallery img {
+  width: 500px; /* Увеличиваем ширину изображений */
   height: auto;
-  width: auto;
-  flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
-}
-
-/* Стилизация полосы прокрутки */
-.gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
-  height: 10px; /* Высота горизонтальной полосы прокрутки */
-}
-
-.gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
-  background-color: darkgrey; /* Цвет ползунка */
-  border-radius: 10px; /* Закругленные углы */
 }
