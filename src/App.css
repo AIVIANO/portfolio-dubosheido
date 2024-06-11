@@ -3,20 +3,32 @@
 }
 
 .App-header h1 {
-  font-size: 30em; /* Увеличиваем размер заголовка */
+  font-size: 3em; /* Увеличиваем размер заголовка */
 }
 
 .App-header p {
-  font-size: 15em; /* Увеличиваем размер текста */
+  font-size: 1.5em; /* Увеличиваем размер текста */
 }
 
 .gallery {
   display: flex;
-  justify-content: center;
-  gap: 30px; /* Увеличиваем расстояние между изображениями */
+  overflow-x: scroll; /* Добавляем горизонтальную прокрутку */
+  gap: 10px; /* Расстояние между изображениями */
+  padding: 10px; /* Внутренний отступ */
 }
 
 .gallery img {
-  width: 5000px; /* Увеличиваем ширину изображений */
+  width: 300px; /* Размер изображений */
   height: auto;
+  flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
+}
+
+/* Стилизация полосы прокрутки */
+.gallery::-webkit-scrollbar {
+  height: 10px; /* Высота горизонтальной полосы прокрутки */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* Цвет ползунка */
+  border-radius: 10px; /* Закругленные углы */
 }
