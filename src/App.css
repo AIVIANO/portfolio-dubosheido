@@ -2,13 +2,21 @@
   text-align: center;
 }
 
+.App-header h1 {
+  font-size: 3em; /* Увеличиваем размер заголовка */
+}
+
+.App-header p {
+  font-size: 1.5em; /* Увеличиваем размер текста */
+}
+
 .gallery {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px; /* Увеличиваем расстояние между изображениями */
 }
 
 .gallery img {
-  width: 200px;
+  width: 400px; /* Увеличиваем ширину изображений */
   height: auto;
 }
