@@ -1,55 +1,38 @@
-/* Добавляем стили для body и html, чтобы фон был видимым */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-image: url('../public/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Стили для основного контейнера */
-.App {
+.App-header {
   text-align: center;
-  background: rgba(255, 255, 255, 0.8); /* Белый полупрозрачный фон для содержимого */
   padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  width: 80%; /* Ширина контейнера */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
 }
 
-/* Стили для заголовков */
 .App-header h1 {
-  font-size: 4em; /* Размер заголовка */
+  font-size: 10em; /* Размер заголовка */
 }
 
 .App-header p {
-  font-size: 2em; /* Размер текста */
+  font-size: 5em; /* Размер текста */
+  margin: 20px 0; /* Отступы сверху и снизу */
 }
 
-/* Стили для галереи */
-.gallery {
+.gallery, .weather-gallery {
   display: flex;
   overflow-x: auto; /* Горизонтальная прокрутка */
   white-space: nowrap; /* Запрещаем перенос строк */
-  padding: 20px 0;
+  padding: 10px 0;
   gap: 10px; /* Расстояние между изображениями */
 }
 
-.gallery img {
-  width: 300px; /* Размер изображений */
+.gallery img, .weather-gallery img {
   height: auto;
+  width: auto;
+  max-height: 1000px; /* Максимальная высота изображений */
   flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
 }
 
 /* Стилизация полосы прокрутки */
-.gallery::-webkit-scrollbar {
-  height: 10px; /* Высота горизонтальной полосы прокрутки */
+.gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
+  height: 30px; /* Высота горизонтальной полосы прокрутки */
 }
 
-.gallery::-webkit-scrollbar-thumb {
+.gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Цвет ползунка */
   border-radius: 10px; /* Закругленные углы */
 }
