@@ -23,7 +23,7 @@
 .gallery img, .weather-gallery img {
   height: auto;
   width: auto;
-  max-height: 500px; /* Максимальная высота изображений */
+  max-height: 1000px; /* Максимальная высота изображений */
   flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
 }
 
