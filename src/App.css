@@ -28,6 +28,10 @@ code {
 .App-header p {
   font-size: 4em; 
   margin: 20px 0; 
+  text-align: justify; /* Выровнять текст по ширине */
+  max-width: 1200px; /* Максимальная ширина текста */
+  margin-left: auto; /* Центрирование блока текста */
+  margin-right: auto; /* Центрирование блока текста */
 }
 
 .gallery, .weather-gallery {
@@ -44,7 +48,6 @@ code {
   max-height: 800px; 
   flex-shrink: 0; 
 }
-
 
 .gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
   height: 30px; 
