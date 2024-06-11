@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-dubosheido/static/css/main.c30438b3.css",
+    "main.css": "/portfolio-dubosheido/static/css/main.e4bc62ad.css",
     "main.js": "/portfolio-dubosheido/static/js/main.9a23d846.js",
     "static/js/453.65079744.chunk.js": "/portfolio-dubosheido/static/js/453.65079744.chunk.js",
     "static/media/val2.jpg": "/portfolio-dubosheido/static/media/val2.8601fc6fb266b0a0b1fc.jpg",
@@ -15,12 +15,12 @@
     "static/media/cat2.jpg": "/portfolio-dubosheido/static/media/cat2.7ec18d626169aebc8d1a.jpg",
     "static/media/cat5.jpg": "/portfolio-dubosheido/static/media/cat5.839b576897ed8b157417.jpg",
     "index.html": "/portfolio-dubosheido/index.html",
-    "main.c30438b3.css.map": "/portfolio-dubosheido/static/css/main.c30438b3.css.map",
+    "main.e4bc62ad.css.map": "/portfolio-dubosheido/static/css/main.e4bc62ad.css.map",
     "main.9a23d846.js.map": "/portfolio-dubosheido/static/js/main.9a23d846.js.map",
     "453.65079744.chunk.js.map": "/portfolio-dubosheido/static/js/453.65079744.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c30438b3.css",
+    "static/css/main.e4bc62ad.css",
     "static/js/main.9a23d846.js"
   ]
 }
