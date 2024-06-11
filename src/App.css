@@ -29,7 +29,7 @@
 
 /* Стилизация полосы прокрутки */
 .gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
-  height: 10px; /* Высота горизонтальной полосы прокрутки */
+  height: 30px; /* Высота горизонтальной полосы прокрутки */
 }
 
 .gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
