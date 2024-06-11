@@ -1,24 +1,26 @@
 .App-header {
   text-align: center;
+  padding: 20px;
 }
 
 .App-header h1 {
-  font-size: 15em; /* Увеличиваем размер заголовка */
+  font-size: 15em; /* Размер заголовка */
 }
 
 .App-header p {
-  font-size: 5em; /* Увеличиваем размер текста */
+  font-size: 5em; /* Размер текста */
 }
 
 .gallery {
   display: flex;
-  overflow-x: scroll; /* Добавляем горизонтальную прокрутку */
+  overflow-x: auto; /* Горизонтальная прокрутка */
+  white-space: nowrap; /* Запрещаем перенос строк */
+  padding: 20px 0;
   gap: 10px; /* Расстояние между изображениями */
-  padding: 10px; /* Внутренний отступ */
 }
 
 .gallery img {
-  width: 5000px; /* Размер изображений */
+  width: 1000px; /* Размер изображений */
   height: auto;
   flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
 }
