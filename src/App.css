@@ -27,10 +27,10 @@
 
 /* Стилизация полосы прокрутки */
 .gallery::-webkit-scrollbar {
-  height: 10px; /* Высота горизонтальной полосы прокрутки */
+  height: 1000px; /* Высота горизонтальной полосы прокрутки */
 }
 
 .gallery::-webkit-scrollbar-thumb {
   background-color: darkgrey; /* Цвет ползунка */
-  border-radius: 10px; /* Закругленные углы */
+  border-radius: 100px; /* Закругленные углы */
 }
