@@ -29,7 +29,7 @@ code {
   font-size: 5em; 
   margin: 20px 0; 
   text-align: justify; /* Выровнять текст по ширине */
-  max-width: 4000px; /* Максимальная ширина текста */
+  max-width: 5000px; /* Максимальная ширина текста */
   margin-left: auto; /* Центрирование блока текста */
   margin-right: auto; /* Центрирование блока текста */
 }
@@ -50,7 +50,7 @@ code {
 }
 
 .gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
-  height: 30px; 
+  height: 40px; 
 }
 
 .gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
