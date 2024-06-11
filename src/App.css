@@ -1,93 +1,55 @@
-body {
-  font-family: Arial, sans-serif;
+/* Добавляем стили для body и html, чтобы фон был видимым */
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-image: url('../public/background.jpg'); /* Путь к вашему фоновому изображению */
-  background-size: cover; /* Масштабирование изображения по размеру экрана */
-  background-repeat: no-repeat; /* Избегаем повторения изображения */
-  background-attachment: fixed; /* Фон остается на месте при прокрутке */
+  height: 100%;
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-header {
+/* Стили для основного контейнера */
+.App {
   text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* Белый полупрозрачный фон для содержимого */
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
-  border-radius: 10px; /* Закругленные углы */
-  margin: 20px; /* Отступы вокруг заголовка */
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%; /* Ширина контейнера */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
 }
 
+/* Стили для заголовков */
 .App-header h1 {
-  font-size: 10em;
+  font-size: 4em; /* Размер заголовка */
 }
 
 .App-header p {
-  font-size: 5em;
-  margin: 20px 0;
+  font-size: 2em; /* Размер текста */
 }
 
-.gallery, .weather-gallery {
+/* Стили для галереи */
+.gallery {
   display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px 0;
-  gap: 10px;
+  overflow-x: auto; /* Горизонтальная прокрутка */
+  white-space: nowrap; /* Запрещаем перенос строк */
+  padding: 20px 0;
+  gap: 10px; /* Расстояние между изображениями */
 }
 
-.gallery img, .weather-gallery img {
-  max-height: 1000px;
+.gallery img {
+  width: 300px; /* Размер изображений */
   height: auto;
-  width: auto;
-  flex-shrink: 0;
-  transition: transform 0.2s;
+  flex-shrink: 0; /* Предотвращаем уменьшение размера изображений */
 }
 
-.gallery img:hover, .weather-gallery img:hover {
-  transform: scale(1.05);
+/* Стилизация полосы прокрутки */
+.gallery::-webkit-scrollbar {
+  height: 10px; /* Высота горизонтальной полосы прокрутки */
 }
 
-.gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
-  height: 30px;
-}
-
-.gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  border-radius: 10px;
-}
-
-nav {
-  background-color: #333;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-@media (max-width: 600px) {
-  .App-header h1 {
-    font-size: 2em;
-  }
-
-  .App-header p, .App-header h2 {
-    font-size: 1.2em;
-  }
-
-  .gallery img, .weather-gallery img {
-    max-height: 200px;
-  }
+.gallery::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* Цвет ползунка */
+  border-radius: 10px; /* Закругленные углы */
 }
