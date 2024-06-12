@@ -22,38 +22,54 @@ code {
 }
 
 .App-header h1 {
-  font-size: 9em; 
+  font-size: 8em; 
 }
 
 .App-header p {
-  font-size: 5em; 
+  font-size: 4em; 
   margin: 20px 0; 
-  text-align: justify; /* Выровнять текст по ширине */
-  max-width: 4200px; /* Максимальная ширина текста */
-  margin-left: auto; /* Центрирование блока текста */
-  margin-right: auto; /* Центрирование блока текста */
+  text-align: justify;
 }
 
-.gallery, .weather-gallery {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery img {
+  height: auto;
+  width: calc(25% - 10px); /* 4 фотографии в ряд */
+  max-width: 300px;
+  flex-shrink: 0; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-gallery {
   display: flex;
   overflow-x: auto; 
   white-space: nowrap; 
   padding: 10px 0;
   gap: 10px;
+  justify-content: center;
 }
 
-.gallery img, .weather-gallery img {
+.weather-gallery img {
   height: auto;
   width: auto;
-  max-height: 1000px; 
+  max-height: 300px; 
   flex-shrink: 0; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery::-webkit-scrollbar, .weather-gallery::-webkit-scrollbar {
-  height: 50px; 
+  height: 10px;
 }
 
 .gallery::-webkit-scrollbar-thumb, .weather-gallery::-webkit-scrollbar-thumb {
-  background-color: darkgrey; 
-  border-radius: 10px; 
+  background-color: darkgrey;
+  border-radius: 10px;
 }
